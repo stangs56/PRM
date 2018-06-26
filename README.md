@@ -41,6 +41,7 @@ Create a text file name 'test.txt' with content 'hello world'
 | Command | Description | Arguments |
 | ------- | ----------- | --------- |
 | uname | Python's platform.uname() which returns a named tuple (this is also the default option) | None |
+| cwd | Get the current working directory on the client | None |
 
 ##### Run Commmand
 
@@ -61,4 +62,5 @@ Create a text file name 'test.txt' with content 'hello world'
 | read-file | Send back the content of a specified file | String of filename |
 | move-file | Move a file to a new location | Tuple of (old_filepath, new_filepath) |
 | rename-file | Rename a file | Tuple of (old_filepath, new_filename) |
+| list-files | List files in a directory or cwd if None | String of directory or None |
 
