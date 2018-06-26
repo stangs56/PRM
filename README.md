@@ -49,4 +49,6 @@ utf-8(command type)|utf-8(command)|utf-8(json(args))
 | ------- | ----------- | --------- |
 | create-file | Create a file with a given filename and a given content | Tuple of (filename, content) |
 | read-file | Send back the content of a specified file | String of filename |
+| move-file | Move a file to a new location | Tuple of (old_filepath, new_filepath) |
+| rename-file | Rename a file | Tuple of (old_filepath, new_filename) |
 
