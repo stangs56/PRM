@@ -3,9 +3,9 @@
 ## Communication
 
 The communication format that is used between the server and the client
-is based on base64 encoded JSON or pickled python objects.  The first
+is based on utf-8 encoded JSON or pickled python objects.  The first
 part of a message is 4 bytes that signify the size of the following
-message.  Base64 strings are then separated by the "|" character.
+message.  utf-8 strings are then separated by the "|" character.
 The first string is the type of command from the table of command types,
 including responses to commands.
 
