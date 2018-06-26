@@ -13,7 +13,7 @@ including responses to commands.
 
 The command is communicated using the following format:
 
-base64(command type)|base64(command)|base64(json(args))
+utf-8(command type)|utf-8(command)|utf-8(json(args))
 
 #### Command types
 
@@ -21,6 +21,27 @@ base64(command type)|base64(command)|base64(json(args))
 | ------------ | ----------- |
 | get-info | Used for commands that request information about the client |
 | run-command | Used to run commands on the remote server |
+| file-system | Used to perform operations with the file system on the client |
 
 
 #### Commands
+
+##### Get Info
+
+| Command | Description | Arguments |
+| ------- | ----------- | --------- |
+| uname | Python's platform.uname() which returns a named tuple (this is also the default option) | None |
+
+##### Run Commmand
+
+| Command | Description | Arguments |
+| ------- | ----------- | --------- |
+| run-python | Run sent text as python code | String of python code |
+
+##### File System
+
+| Command | Description | Arguments |
+| ------- | ----------- | --------- |
+| create-file | Create a file with a given filename and a given content | Tuple of (filename, content) |
+| read-file | Send back the content of a specified file | String of filename |
+
