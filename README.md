@@ -37,6 +37,11 @@ utf-8(command type)|utf-8(command)|utf-8(json(args))
 | Command | Description | Arguments |
 | ------- | ----------- | --------- |
 | python | Run sent text as python code | String of python code |
+| cmd | Execute sent text in the command prompt | String of CMD commands |
+| powershell | Execute sent text in powershell | String of powershell commands |
+| bash | Execute sent text in bash | String of bash commands |
+| dash | Execute sent text in dash | String of dash commands |
+| default | Execute sent text in the default system shell | String of comands |
 
 ##### File System
 
