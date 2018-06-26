@@ -13,7 +13,7 @@ including responses to commands.
 
 The command is communicated using the following format:
 
-base64(command type)|base64(command)|base64(json(args))
+utf-8(command type)|utf-8(command)|utf-8(json(args))
 
 #### Command types
 
