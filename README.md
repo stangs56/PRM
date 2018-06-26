@@ -36,7 +36,7 @@ utf-8(command type)|utf-8(command)|utf-8(json(args))
 
 | Command | Description | Arguments |
 | ------- | ----------- | --------- |
-| run-python | Run sent text as python code | String of python code |
+| python | Run sent text as python code | String of python code |
 
 ##### File System
 
