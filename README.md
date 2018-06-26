@@ -15,6 +15,16 @@ The command is communicated using the following format:
 
 utf-8(command type)|utf-8(command)|utf-8(json(args))
 
+#### Examples
+
+Run the python command "import this"
+
+`b'run-command|python|"import this"'`
+
+Create a text file name 'test.txt' with content 'hello world'
+
+`b'file-system|create-file|["test.txt", "hello world"]'`
+
 #### Command types
 
 | Command type | Description |
